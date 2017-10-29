@@ -12,7 +12,7 @@
 /env/
 MANIFEST
 coverage.*
-
+migrations/
 !.gitignore
 !.travis.yml
 !.isort.cfg
