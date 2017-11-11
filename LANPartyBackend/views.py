@@ -7,8 +7,8 @@ from rest_framework.parsers import JSONParser
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework import generics
-from models import Inscripcions, Tiquets
-from serializers import InscripcioSerializer, TiquetSerializer
+from .models import Inscripcions, Tiquets
+from .serializers import InscripcioSerializer, TiquetSerializer
 
 @csrf_exempt
 def inscripcio_list(request):

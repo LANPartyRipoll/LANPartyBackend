@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from models import Inscripcions, Tiquets
+from .models import Inscripcions, Tiquets
 
 class InscripcioSerializer(serializers.ModelSerializer):
     class Meta:

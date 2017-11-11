@@ -39,4 +39,5 @@ class Tiquets(models.Model):
     inscripcio=models.ForeignKey('Inscripcions',on_delete=models.CASCADE, null=True)
 
     class Meta:
+        managed = True
         db_table = 'tiquets'
