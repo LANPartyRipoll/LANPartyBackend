@@ -4,7 +4,7 @@ from .models import Inscripcions, Tiquets
 class InscripcioSerializer(serializers.ModelSerializer):
     class Meta:
         model = Inscripcions
-        fields = ('nom', 'cognom', 'email', 'telefon', 'categoria', 'equip', 'nick', 'dni', 'naixement', 'poblacio', 'major', 'pagat', 'present')
+        fields = ('nom', 'cognom')
 
 class TiquetSerializer(serializers.ModelSerializer):
     class Meta:

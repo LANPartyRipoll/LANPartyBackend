@@ -34,7 +34,7 @@ class Inscripcions(models.Model):
 
 
 class Tiquets(models.Model):
-    qr_id = models.TextField(null=True)
+    qr_id = models.TextField(null=True, unique=True, max_length=255)
     scanned = models.BooleanField()
     inscripcio=models.ForeignKey('Inscripcions',on_delete=models.CASCADE, null=True)
 
