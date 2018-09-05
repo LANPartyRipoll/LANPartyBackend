@@ -11,9 +11,11 @@
 $ cd ~
 $ python3 -m venv backend
 $ cd backend
-$ source bin/activate
 $ git clone https://github.com/LANPartyRipoll/LANPartyBackend.git
+$ source bin/activate
 ```
+
+From here, all commands are run inside the venv.
 
 ## Install Django
 ```
@@ -30,7 +32,7 @@ PASSWORD= "password"
 ```
 
 ## Perform database migrations
-The database must be empty before executing these commands.
+The database must be empty before running these commands.
 ```
 $ python3 manage.py makemigrations LANPartyBackend
 $ python3 manage.py migrate
