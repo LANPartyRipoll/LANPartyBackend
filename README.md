@@ -2,7 +2,7 @@
 
 ## Install packages
 ```
-# apt install python3 python3-pip python3-venv python3-mysqldb git
+# apt install python3 python3-pip python3-venv python3-dev default-libmysqlclient-dev git
 ```
 
 ## Prepare venv
@@ -21,6 +21,7 @@ From here, all commands are run inside the venv.
 ```
 $ pip3 install Django
 $ pip3 install djangorestframework
+$ pip3 install mysqlclient
 ```
 
 ## Create LANPartyService/settings_secret.py
